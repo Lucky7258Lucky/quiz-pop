@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  height: 100vh;
+}
+header {
+  background-color: deepskyblue;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.createuser {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:50px ;
+}
+
+.createuser:hover {
+  opacity: 0.8;
+}
+div#second-container {
+  background-color: cornflowerblue;
+}
+.hero {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rebeccapurple;
+  height: 82vh;
+}
+.hero-content {
+  flex: 1;
+  text-align: center;
+  height: 28rem;
+
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top:12rem ;
+}
+
+.hero-content .highlight {
+  color: red;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  opacity: 0.8;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+} 
+.box{
+  top: 15rem;
+  left: 35rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 238, 238, 0.036);
+}
+.box-content {
+  background:#ebdcdc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.box-content h3 {
+  margin: 25px 0 10px;
+}
+.box-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.box-content button {
+  padding: 10px 20px; 
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.create {
+  background:green;
+  color: white;
+}
+.quit-btn {
+  background: red;
+  color: white;
+}
+
+/* section2..... */
+
+
+
+.navbar {
+display: flex;
+justify-content: space-between;  
+align-items: center;
+background-color: #add8e6;  
+padding: 10px 20px;
+width: 100%;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+font-size: 20px;
+font-weight: bold;
+color: #000;
+}
+
+.menu {
+display: flex;
+gap: 20px;
+}
+
+.menu a {
+text-decoration: none;
+font-size: 16px;
+color: #000;
+transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+color: #555;
+}
+
+.user {
+font-size: 16px;
+color: black ;
+
+}
+button {
+background-color: black;
+color: white;
+}
+.containersecond {
+text-align: center;
+background-color: #fff;
+padding: 5rem 30px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+width: 80%;
+max-width: 500px;
+margin: 6rem auto 0;
+}
+
+.container h1 {
+font-size: 24px;
+margin-bottom: 10px;
+color:white;
+}
+
+.container h2 {
+font-size: 20px;
+margin-bottom: 20px;
+color: #555;
+}
+
+
+.topics {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.topic {
+padding: 15px 20px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+color: #fff;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.topic.music {
+background-color: #1e90ff; 
+margin-top: 1rem;
+}
+
+.topic.art {
+background-color: #00274d; 
+}
+
+.topic.coding {
+background-color: #ffb700; 
+}
+
+.topic.start{
+background-color: black; 
+}
+
+
+.topic:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#questions{
+display: none;
+background-color: #ffb700;
+height: 100%;
+width: 100%;
+}
+.images img{
+  border-radius: 50%;
+}
+#second-container {
+  display: none;
+}
+
+#questions {
+  display: none;
+  margin-top: 20px;
+}
+
+.question-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.question-container h2 {
+  margin-bottom: 20px;
+}
+
+.options {
+  margin-bottom: 20px;
+
+  display: grid;
+}
+
+.options p {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.timer {
+  font-size: 18px;
+  color: #333;
+}
+#score-page {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  background-color: navy;
+  color: white;
+  font-size: 4rem;
+}
+#score-page h1 {
+  color: #007BFF;
+  margin-top: 6rem;
+  font-size: 6rem;
+}
+#score-page button  {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+#score-page p {
+  margin-top: 3rem;
+}
